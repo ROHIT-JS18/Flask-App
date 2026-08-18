@@ -1,0 +1,13 @@
+Login form 
+jinja
+static files forms 
+template inheritance
+mini project
+
+
+Forms
+bank - cust
+
+platform => user dalega hum flask 
+
+Jinja 2
