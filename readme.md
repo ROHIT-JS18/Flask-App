@@ -2,7 +2,7 @@
 
 A clean, responsive **full-stack Task Management web application** built with **Python, Flask, Flask-SQLAlchemy, and Jinja2**. The application allows users to manage tasks, track task progress, and maintain persistent task data using SQLite.
 
-## 🚀 Tech Stack ,,,
+## 🚀 Tech Stack 
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
