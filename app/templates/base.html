@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %} To Do App {% edblock %}</title>
-    <link rel="stylesheet" href="{{url_for('static',filename = 'css/style.css')}}"
-
+    <title>{% block title %} To Do App {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
@@ -15,22 +14,27 @@
                 {% if 'user' in session %}
                     <a href="{{ url_for('auth.logout') }}">Logout</a>
                 {% else %}
+                    <a href="{{ url_for('auth.login') }}">Login</a>
+                {% endif %}
             </nav>
         </div>
     </header>
     <main class="container">
-        {% with messages = get_flashed_message(with_categories=True) %}
-            {% for category,message in messages %}
-                <div class="flash {{category}}">{{message}}</div>
-            {% endfor %}
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
         {% endwith %}
-    {% block content %} {% endblock %}
+        {% block content %}{% endblock %}
     </main>
-<footer>
-    <div class = "container">
-        <p>&copy: {{2025}} My Flash To-Do App</p>
-        
-    </div>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Flask To-Do App</p>
+        </div>
+    </footer>
+    <!-- <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
