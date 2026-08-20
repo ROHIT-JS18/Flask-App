@@ -1,4 +1,4 @@
-# Flask To-Do  Application
+# Flask To-Do Web Application
 
 A clean, responsive **full-stack Task Management web application** built with **Python, Flask, Flask-SQLAlchemy, and Jinja2**. The application allows users to manage tasks, track task progress, and maintain persistent task data using SQLite.
 
