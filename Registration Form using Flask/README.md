@@ -3,7 +3,7 @@
 A simple Flask web application with a user registration form (name, city, phone number)
 that submits data to the server and displays it back on a confirmation page.
 
-## Folder Structure
+## Folder \
 ```
 FlaskForm-YourName/
 ├── app.py
