@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .confirmation-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 340px;
+            text-align: center;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #eeeeee;
+        }
+        td.label {
+            font-weight: bold;
+            color: #555555;
+            width: 40%;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h2>Registration Successful!</h2>
+        <table>
+            <tr>
+                <td class="label">Name:</td>
+                <td>{{ name }}</td>
+            </tr>
+            <tr>
+                <td class="label">City:</td>
+                <td>{{ city }}</td>
+            </tr>
+            <tr>
+                <td class="label">Phone Number:</td>
+                <td>{{ phone }}</td>
+            </tr>
+        </table>
+        <a href="/">Register Another User</a>
+    </div>
+</body>
+</html>
