@@ -9,7 +9,7 @@ FlaskForm-YourName/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── templates
+└── templates/
     ├── form.html
     └── confirmation.html
 ```
